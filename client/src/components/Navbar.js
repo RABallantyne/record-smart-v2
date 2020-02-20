@@ -1,7 +1,11 @@
 import React from 'react';
 
 export default function Navbar() {
-  return <div>
-    <h1> check </h1>
-  </div>;
+  return (
+    <nav className='navBar'>
+      <div className='navLinks'>
+        <h1> RecordSmart </h1>
+      </div>
+    </nav>
+  );
 }

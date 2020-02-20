@@ -8,7 +8,6 @@ function App() {
     <Router>
       <>
         <Navbar />
-        <h1>hi</h1>
       </>
     </Router>
   );
