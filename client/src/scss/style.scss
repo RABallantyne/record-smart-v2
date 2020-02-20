@@ -5,14 +5,16 @@
 }
 body {
   font-family: 'Odibee Sans', sans-serif;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   font-size: 1rem;
   line-height: 1.6;
   overflow: auto;
+  background-color: black;
 }
 
 .navBar {
   background-color: black;
+  border-bottom: 1px solid limegreen;
   padding: 0.2em 0.7em;
   .navLinks {
     h1 {
