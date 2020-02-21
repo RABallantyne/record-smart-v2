@@ -1,4 +1,4 @@
-$bright-color: rgb(135, 242, 135);
+$bright-color: rgb(104, 255, 104);
 $dark-color: rgb(52, 52, 52);
 
 * {
@@ -8,6 +8,7 @@ $dark-color: rgb(52, 52, 52);
 }
 body {
   font-family: 'Odibee Sans', sans-serif;
+  color: $bright-color;
   letter-spacing: 0.2em;
   font-size: 1rem;
   line-height: 1.6;
@@ -18,14 +19,30 @@ body {
 .navBar {
   background-color: black;
   border-bottom: 1px solid $bright-color;
-  padding: 0.2em 0.7em;
+  // padding: 0.2em 0.7em;
   color: $bright-color;
+  width: 0;
+  height: 100%;
+  position: fixed;
+  overflow-x: hidden;
   .navLinks {
+    margin-left: 0;
+    text-decoration: none;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     h1 {
       font-style: italic;
+    }
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    a {
+      color: $bright-color;
+      padding: 0 0.5em;
+      text-decoration: none;
     }
   }
 }
@@ -34,7 +51,7 @@ body {
   background-color: $dark-color;
   margin: auto;
   // position: relative;
-  padding: 0.3em 1em;
+  // padding: 0.3em 1em;
   bottom: 0;
   height: 100vh;
   // margin: 0 1em;\
