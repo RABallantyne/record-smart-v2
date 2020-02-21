@@ -1,3 +1,6 @@
+$bright-color: rgb(135, 242, 135);
+$dark-color: rgb(52, 52, 52);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,12 +17,22 @@ body {
 
 .navBar {
   background-color: black;
-  border-bottom: 1px solid limegreen;
+  border-bottom: 1px solid $bright-color;
   padding: 0.2em 0.7em;
   .navLinks {
     h1 {
-      color: limegreen;
+      color: $bright-color;
       font-style: italic;
     }
   }
+}
+
+.container {
+  background-color: $dark-color;
+  margin: auto;
+  // position: relative;
+  padding: 0.3em 1em;
+  bottom: 0;
+  height: 100vh;
+  // margin: 0 1em;\
 }

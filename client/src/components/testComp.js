@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function testComp() {
-  return <div className='container'></div>;
+export default function TestComp() {
+  return <div className='container'>things in a container</div>;
 }
