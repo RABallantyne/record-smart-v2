@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Navbar() {
   const openNav = () => {
-    document.querySelector('.navBar').style.width = '250px';
+    document.querySelector('.navBar').style.width = '200px';
   };
   const closeNav = () => {
     document.querySelector('.navBar').style.width = '0';

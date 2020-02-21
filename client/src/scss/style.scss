@@ -17,6 +17,12 @@ body {
 }
 
 .navBar {
+  a {
+    color: $bright-color;
+    padding: 0 0.5em;
+    text-decoration: none;
+  }
+
   background-color: black;
   border-bottom: 1px solid $bright-color;
   // padding: 0.2em 0.7em;
@@ -24,6 +30,11 @@ body {
   width: 0;
   height: 100%;
   position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  padding-top: 1em;
   overflow-x: hidden;
   .navLinks {
     margin-left: 0;
@@ -39,11 +50,6 @@ body {
   .nav-menu {
     display: flex;
     flex-direction: column;
-    a {
-      color: $bright-color;
-      padding: 0 0.5em;
-      text-decoration: none;
-    }
   }
 }
 
