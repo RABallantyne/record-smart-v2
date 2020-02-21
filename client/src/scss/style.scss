@@ -19,9 +19,12 @@ body {
   background-color: black;
   border-bottom: 1px solid $bright-color;
   padding: 0.2em 0.7em;
+  color: $bright-color;
   .navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     h1 {
-      color: $bright-color;
       font-style: italic;
     }
   }

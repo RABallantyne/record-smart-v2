@@ -5,6 +5,9 @@ export default function Navbar() {
     <nav className='navBar'>
       <div className='navLinks'>
         <h1> RecordSmart </h1>
+        <div className='nav-menu'>
+          <span>menu</span>
+        </div>
       </div>
     </nav>
   );
