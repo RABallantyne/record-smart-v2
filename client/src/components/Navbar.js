@@ -1,25 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Navbar() {
-  const openNav = () => {
-    document.querySelector('.navBar').style.width = '200px';
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const toggleNav = () => {
+    setOpenMenu(!openMenu);
   };
-  const closeNav = () => {
-    document.querySelector('.navBar').style.width = '0';
-  };
+
   return (
     <>
-      <span onClick={openNav}>open</span>
-      <div className='navBar'>
-        <div className='navLinks'>
-          <a href='javascript:void(0)' className='closeBtn' onClick={closeNav}>
-            close
+      <span onClick={toggleNav}>MENU</span>
+
+      <div>
+        <div
+          className='navBar'
+          style={openMenu ? { width: '200px' } : { width: '0' }}
+        >
+          <a href='javascript:void(0)' onClick={toggleNav}>
+            X
           </a>
-          <h1> RecordSmart </h1>
-          <div className='nav-menu'>
-            <a href='#'>projects</a>
-            <a href='#'>friends</a>
-            <a href='#'>community</a>
+          <div className='navLinks'>
+            <h1> RecordSmart </h1>
+            <div className='nav-menu'>
+              <a href='#'>projects</a>
+              <a href='#'>friends</a>
+              <a href='#'>community</a>
+            </div>
           </div>
         </div>
       </div>

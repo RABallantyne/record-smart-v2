@@ -27,7 +27,7 @@ body {
   border-bottom: 1px solid $bright-color;
   // padding: 0.2em 0.7em;
   color: $bright-color;
-  width: 0;
+  width: 200px;
   height: 100%;
   position: fixed;
   z-index: 1;
@@ -47,6 +47,7 @@ body {
       font-style: italic;
     }
   }
+
   .nav-menu {
     display: flex;
     flex-direction: column;
