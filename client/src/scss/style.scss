@@ -16,50 +16,83 @@ body {
   background-color: black;
 }
 
-.navBar {
-  a {
-    color: $bright-color;
-    padding: 0 0.5em;
-    text-decoration: none;
-  }
-
-  background-color: black;
-  border-bottom: 1px solid $bright-color;
-  // padding: 0.2em 0.7em;
-  color: $bright-color;
-  width: 200px;
-  height: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
-  padding-top: 1em;
-  overflow-x: hidden;
-  .navLinks {
-    margin-left: 0;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: left;
-    h1 {
-      font-style: italic;
+.nav {
+  padding: 0.5em;
+  &-bar {
+    a {
+      color: $bright-color;
+      // padding: 0 0.5em;
+      text-decoration: none;
     }
-  }
 
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
+    background-color: black;
+    border-bottom: 1px solid $bright-color;
+    // padding: 0.2em 0.7em;
+    color: $bright-color;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    // z-index: 1;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    margin-top: 2em;
+    overflow-x: hidden;
+    &-links {
+      margin-left: 0;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: left;
+      h1 {
+        font-style: italic;
+      }
+    }
+
+    &-menu {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
 .container {
   background-color: $dark-color;
-  margin: auto;
-  // position: relative;
+  // margin: auto;
+  width: auto;
+  // position: fixed;
   // padding: 0.3em 1em;
   bottom: 0;
   height: 100vh;
   // margin: 0 1em;\
+}
+
+.loading {
+  margin: 10em;
+  width: 100px;
+  height: 50px;
+  border: 2px solid black;
+  display: flex;
+  .left {
+    width: 50px;
+    // margin: 50%;
+    border-top: 2px solid green;
+    border-radius: 50%;
+  }
+  .right {
+    transition: 0.5s;
+    width: 50%;
+    border-bottom: 2px solid green;
+    border-radius: 50%;
+  }
+  &:hover {
+    .right {
+      transition: 0.5s;
+      width: 50%;
+      border-top: 2px solid green;
+      border-radius: 50%;
+      border-bottom: 0;
+    }
+  }
 }

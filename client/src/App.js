@@ -7,10 +7,10 @@ import TestComp from './components/TestComp';
 function App() {
   return (
     <Router>
-      <>
+      <div className='main'>
         <Navbar />
         <Route exact path='/' component={TestComp} />
-      </>
+      </div>
     </Router>
   );
 }

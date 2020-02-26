@@ -9,19 +9,18 @@ export default function Navbar() {
 
   return (
     <>
-      <span onClick={toggleNav}>MENU</span>
-
-      <div>
+      <div className='nav'>
+        <span onClick={toggleNav}>{openMenu ? 'CLOSE' : 'MENU'}</span>
         <div
-          className='navBar'
+          className='nav-bar'
           style={openMenu ? { width: '200px' } : { width: '0' }}
         >
-          <a href='javascript:void(0)' onClick={toggleNav}>
+          {/* <a href='javascript:void(0)' onClick={toggleNav}>
             X
-          </a>
-          <div className='navLinks'>
+          </a> */}
+          <div className='nav-bar-links'>
             <h1> RecordSmart </h1>
-            <div className='nav-menu'>
+            <div className='nav-bar-menu'>
               <a href='#'>projects</a>
               <a href='#'>friends</a>
               <a href='#'>community</a>
